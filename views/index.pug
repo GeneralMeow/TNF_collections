@@ -1,6 +1,35 @@
 extends layout
 
 block content
-  p Welcome to WAKANDA
-  each hit in hits
-    li=hit
+  h1 Welcome to Wakanda
+  ul
+    each hit in hits
+      a(href=hit['jcr:path'])
+        img(src=hit.thumbnailMobile)
+      h2=hit['jcr:title']
+    br
+    br
+    br
+    br
+    br
+    br
+    br
+  div.row
+    img.column(src='/images/EnduranceChallenge-callout.jpeg')
+    img.column(src='/images/ExploreFund-callout.jpeg')
+  div(class='hr-div')
+    hr
+  div(class='hr-div2')
+    hr(class='hr2')
+  div(class='endurance-text column')
+    h3 THE NORTH FACE ENDURANCE CHALLENGE
+    p Ready for a challenge? Registration for The North Face Endurance Challenge Series are now open. Find an event in your region and sign up. Don't delay, these events will sell out.
+    h3 EXPLORE FUND GRANTS
+    p Explore Fund grants support nonprofit organizations working to inspire and enable the next generation of outdoor explorers and conservationists.  Learn more about the program and its results.
+  div(class='inner-button')
+    a(href='https://www.thenorthface.com/content/vfcorp/thenorthface/north-america/en_us/get-outdoors/endurance-challenge.html')
+      div.register-today
+        | Register Today
+    a(href='https://www.thenorthface.com/about-us/outdoor-exploration/explore-fund.html')
+      div.learn-more
+        | Learn More

@@ -1,8 +1,80 @@
 body {
   padding: 50px;
-  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  font: 14px Helvetica, Arial, sans-serif;
+}
+a {
+  text-decoration: none;
 }
 
-a {
-  color: #00B7FF;
+.learn-more, .register-today {
+  background-color: #e72b1d;
+  border-color: #be1f14;
+  color: white;
+  height: 80px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 320px;
+}
+
+.learn-more:hover, .register-today:hover {
+  background-color: black;
+  transition: .5s;
+}
+
+.endurance-callout {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.inner-button {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 30px;
+}
+
+.hr-div {
+  width: 400px;
+  display: inline-block;
+  margin: 10px 100px 0 50px;
+}
+.hr-div2 {
+  width: 400px;
+  display: inline-block;
+  margin: 10px 77px 0 74px;
+  float: right;
+}
+
+hr {
+  width: 400px;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.endurance-text {
+  column-count: 2;
+  width: 50%;
+  align-content: center;
+  column-gap: 40px;
+}
+
+.explore-text{
+  position: fixed;
+  align: right;
+}
+
+.grid-container {
+  display: grid;
+  grid-column-start: 1;
+  grid-column-end: 2;
+}
+
+.row {
+  display: flex;
+}
+
+.column{
+flex: -1%;
+padding: 10px;
 }
