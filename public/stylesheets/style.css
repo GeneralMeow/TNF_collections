@@ -1,24 +1,8 @@
 body {
-  padding: 50px;
   font: 14px Helvetica, Arial, sans-serif;
 }
 a {
   text-decoration: none;
-}
-
-.learn-more, .register-today {
-  background-color: #e72b1d;
-  border-color: #be1f14;
-  color: white;
-  height: 80px;
-  text-transform: uppercase;
-  text-align: center;
-  width: 320px;
-}
-
-.learn-more:hover, .register-today:hover {
-  background-color: black;
-  transition: .5s;
 }
 
 .endurance-callout {
@@ -32,49 +16,52 @@ a {
   flex-direction: row;
   justify-content: space-evenly;
   margin-top: 30px;
-}
-
-.hr-div {
-  width: 400px;
-  display: inline-block;
-  margin: 10px 100px 0 50px;
-}
-.hr-div2 {
-  width: 400px;
-  display: inline-block;
-  margin: 10px 77px 0 74px;
-  float: right;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 65px;
+  font-weight: bold;
 }
 
 hr {
+  margin-left: 9px;
   width: 400px;
+}
+
+.container {
   display: flex;
-  justify-content: space-evenly;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-.endurance-text {
-  column-count: 2;
-  width: 50%;
-  align-content: center;
-  column-gap: 40px;
+.left-side, .right-side {
+  border: solid black 2px;
+  justify-content: space-between;
 }
 
-.explore-text{
-  position: fixed;
-  align: right;
+.title {
+  text-align: center;
 }
 
-.grid-container {
-  display: grid;
-  grid-column-start: 1;
-  grid-column-end: 2;
+.content {
+  border: 5px red dotted;
 }
 
-.row {
-  display: flex;
+.button {
+  background-color: #e72b1d;
+  border-color: #be1f14;
+  color: white;
+  height: 50px;
+  margin-left: 50px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 492px;
 }
 
-.column{
-flex: -1%;
-padding: 10px;
+.button:hover {
+  background-color: black;
+  transition: .5s;
+}
+
+.text {
+  text-align: center;
 }
